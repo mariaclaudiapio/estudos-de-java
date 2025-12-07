@@ -1,13 +1,19 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main() {
-  //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-  // to see how IntelliJ IDEA suggests fixing it.
-  IO.println(String.format("Hello and welcome!"));
+public class Main
+{
+    public static void main(String[] args)
+    {
+        System.out.println("**********************");
+        System.out.println("**   Screen Match   **");
+        System.out.println("**********************");
 
-  for (int i = 1; i <= 5; i++) {
-    //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-    // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-    IO.println("i = " + i);
-  }
+        System.out.println("Bem-vindo ao Screen Match!!!");
+
+        // Declaração de variáveis
+        int releaseYear = 2022;
+        String movie = "Top Gun - Maverick";
+        boolean included = false;
+
+        System.out.printf("O filme '%s' foi lançado em %d. Incluído no plano? %b", movie, releaseYear, included);
+    }
 }
+
