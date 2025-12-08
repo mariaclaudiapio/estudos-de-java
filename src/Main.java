@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main
 {
     public static void main(String[] args)
@@ -6,7 +8,12 @@ public class Main
         System.out.println("**   Screen Match   **");
         System.out.println("**********************");
 
-        System.out.println("Bem-vindo ao Screen Match!!!");
+        Scanner reading = new Scanner(System.in);
+
+        System.out.println("Olá! Qual é o seu nome?");
+        String name = reading.nextLine();
+
+        System.out.printf("%s, bem-vindo(a) ao Screen Match!!!", name);
 
         // Declaração de variáveis
         int releaseYear = 1982;
